@@ -8,7 +8,7 @@ if len(sys.argv) == 5:
     drive, workspace_name, project_name, language = sys.argv[1:]
 else:
     drive = input("Enter drive: ")
-    workspace = input("Enter workspace: ")
+    workspace_name = input("Enter workspace: ")
     project_name = input("Enter project_name: ")
     language = input("Enter programming language: ")
 
