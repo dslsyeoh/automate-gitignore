@@ -16,8 +16,8 @@ os.chdir("{}:/".format(drive.upper()))
 
 languages = {
   "python": [".idea/", "venv/", "resources/"],
-  "spring": ["idea/", "target/"],
-  "java": ["idea/", "out/"],
+  "spring": [".idea/", "target/"],
+  "java": [".idea/", "out/"],
 }
 
 
