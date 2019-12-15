@@ -1,0 +1,6 @@
+{
+  "drive": "<workspace-directory>",
+  "workspace_name": "<workspace-name>",
+  "project_name": "<project-name>",
+  "language": "<language>"
+}

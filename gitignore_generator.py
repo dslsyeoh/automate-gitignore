@@ -3,8 +3,16 @@
 
 import os
 import sys
+import json
 
-if len(sys.argv) == 5:
+if os.path.exists(os.path.join("config", "setting.json")):
+    with open(os.path.join("config", "setting.json")) as json_file:
+        json_object = json.loads(json_file.read())
+        drive = json_object["drive"]
+        workspace_name = json_object["workspace_name"]
+        project_name = json_object["project_name"]
+        language = json_object["language"]
+elif len(sys.argv) == 5:
     drive, workspace_name, project_name, language = sys.argv[1:]
 else:
     drive = input("Enter drive: ")
